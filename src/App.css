@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+/* ************************************************************************************************************************************************************************************************ */
+/* ***********************************************************************  header css start ****************************************************************************************************** */
+/* ************************************************************************************************************************************************************************************************ */
+
+.header nav ul li a span::after{
+  height: 2px;
+  width: 0%;
+  content: "";
+  position: absolute;
+  background-color: white;
+  bottom: -25px;
+  left: 0;
+  transition: .5s;
+}
+
+.header nav ul li a:hover span::after{
+  width: 100%;;
+}
+
+/* ************************************************************************************************************************************************************************************************ */
+/* ***********************************************************************  header css end ******************************************************************************************************** */
+/* ************************************************************************************************************************************************************************************************ */
+
+
+.slider_container {
+  scroll-behavior: smooth;
+}
+
+.upper_layer{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.upper_layer .flex_dev{
+  background-color: rgb(255 255 255 / 4%) !important;
+  box-shadow: 0px 4px 14px 0px hsla(0, 0%, 100%, .25) inset;
+}
+
+.upper_layer .content h1{
+  background-image: linear-gradient(0deg, #696969 -10.07%, #fff);
+  background-clip: text;
+  color: transparent;
+}
+
+.our_ai_tool .headding_part h2{
+  background-image: linear-gradient(0deg, #696969 -10.07%, #fff);
+  background-clip: text;
+  color: transparent;
+}
+
+.upper_layer .inp input{
+  border: 5px solid #373839;
+}
+
+.upper_layer .inp button a{
+  border: 5px solid #B99BFF;
+}
+
+.our_ai_tool .sub_content h3{
+  background-image: linear-gradient(0deg, #696969 -10.07%, #fff);
+  background-clip: text;
+  color: transparent;
+}
+
+.text_sp{
+  background-image: linear-gradient(0deg, #696969 -10.07%, #fff);
+  background-clip: text;
+  color: transparent;
+}
