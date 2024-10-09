@@ -15,7 +15,7 @@ const Home = () => (
     <Header />
     <Leandding />
     <Achivement />
-    {/* <Our_ai_tool /> */}
+    <Our_ai_tool />
     <Priceing />
     <Questions />
     <Banner />
