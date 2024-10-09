@@ -1,10 +1,82 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { BsStars } from 'react-icons/bs';
 
 const Leandding = () => {
+
+  const [input_data , setinput_data] = useState(
+    [
+      "A magical Disney-inspired castle",
+      "An enchanted forest bathed in the soft, golden light",
+      "realistic portrait of an elderly sailor",
+      "action-packed, anime-style battle",
+      "a cyberpunk dystopia with a sprawling, rain-soaked cityscape",
+      "a breathtaking cosmic journey through a surreal dreamscape",
+    ]
+  );
+
+  const [inp_val, setinp_val] = useState("");
+
+  let a = "";
+
+  var i = 0 , j = 0 , k = 0 , pause = false , animation , dataRemover , dataAdder;
+
+  useEffect(() => {
+
+    animation = document.getElementById("animation");
+    
+      dataAdder = setInterval(() => {
+
+        if(j >= input_data[i].length){
+          if(!pause){
+            pause = true;
+
+            setTimeout(() => {
+              dataRemover = setInterval(() => {
+                  if(k < input_data[i].length){
+                    k++;
+                  }else if(pause){
+                    pause =  false;
+                    console.log(pause)
+                    j = 0;
+                    i++;
+                    animation.value = "";
+                    if(i >= input_data.length){
+                      i = 0;
+                    }
+                  }
+                  if(pause){
+                    animation.value = animation.value.substr(0 , animation.value.length - 1)
+                  }
+                } , 100)
+            }, 1000)
+          }
+        }
+
+        if(!pause){
+          
+          animation.value += input_data[i][j];
+          j++;
+          if(j >= input_data[i].length){
+            pause = false;
+            k = 0;
+          }
+        }
+
+
+      }, 150)
+
+
+  },[])
+
+  function handleTextControler(){
+    animation.value = input_data[i];
+    clearInterval(dataAdder);
+    clearInterval(dataRemover);
+  }
+
   return (
   <div className="home relative">
     <section className='slider_section pt-8 pb-0'>
@@ -310,11 +382,11 @@ const Leandding = () => {
             </p>
           </div>
           <div className="inp relative hidden lg:block w-fit mx-auto mt-[32px] items-center">
-            <input type="text" name="" className='w-[664px] p-4 pl-4 pr-1 rounded-full' placeholder='Type Hear' id="" />
-            <button className='block'><a href="" className='absolute py-[8px] px-[45px] flex bg-[#8550FF] font-semibold text-white rounded-full top-[8px] right-[10px] gap-2 items-center'><BsStars /> <sapn>Create</sapn></a></button>
+            <input type="text" name="" value={inp_val} className='w-[664px] p-4 pl-4 pr-1 rounded-full' onChange={() => {}} onClick={() => handleTextControler()} id="animation" />
+            <button className='block'><a className='absolute py-[8px] px-[45px] flex bg-[#8550FF] font-semibold text-white rounded-full top-[8px] right-[10px] gap-2 items-center'><BsStars /> <span>Create</span></a></button>
           </div>
           <div className="button text-center mt-[32px] lg:hidden block">
-            <button className='block mx-auto'><a href="" className='py-[10px] px-[50px] flex bg-[#8550FF] font-semibold text-white rounded-full gap-2 items-center'><BsStars /> <sapn>Start Creating for Free</sapn></a></button>
+            <button className='block mx-auto'><a href="" className='py-[10px] px-[50px] flex bg-[#8550FF] font-semibold text-white rounded-full gap-2 items-center'><BsStars /> <span>Start Creating for Free</span></a></button>
           </div>
         </div>
       </div>

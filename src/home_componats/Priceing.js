@@ -8,7 +8,7 @@ const Priceing = () => {
             <div className="con text-center">
                 <div className="heading">
                     <span className='text-white py-[6px] px-[16px] block w-fit mx-auto rounded-full text-[14px] mb-[18px]' style={{border: "2px solid #333437" , letterSpacing: "4px" , color: "#b6b6b7"}}>OUR PRICING</span>
-                    <h2 className='text_sp mx-auto md:text-[46px] xsm:w-[335px] text-[30px] font-semibold md:w-[540px] md:leading-[60px]'>
+                    <h2 className='text-white mx-auto md:text-[46px] xsm:w-[335px] text-[30px] font-semibold md:w-[540px] md:leading-[60px]'>
                         Get Started with ImagineArt
                     </h2>
                 </div>

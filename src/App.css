@@ -105,3 +105,28 @@
   background-clip: text;
   color: transparent;
 }
+.main_benner_for_download{
+  background-image: url("./assets//bagaground_iamge_of_download.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(44 45 49);
+}
+
+.custom-file-input {
+  display: none; /* Hides the actual input */
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.file-label i {
+  margin-right: 10px; /* Spacing between the icon and the text */
+}

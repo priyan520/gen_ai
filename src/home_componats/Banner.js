@@ -2,12 +2,6 @@ import React from 'react'
 
 const Banner = () => {
 
-    const a = {aw : "fhbesb"};
-    
-    a.av = "fwr";
-
-    console.log(a)
-
   return (
     <section className='benner py-[120px] bg-[#0A0B0E]'>
         <div className="container mx-auto">
@@ -21,7 +15,7 @@ const Banner = () => {
                             <a href="" className='text-white py-[12px] px-6 block bg-[#8850FF] rounded-[10px] text-[16px] font-semibold'>Follow Us</a>
                         </button>
                     </div>
-                    <img src={require("../assets/space-from-earth.webp")} className='absolute bottom-0 right-0 h-full xl:w-[372px] lg:w-[254px] md:w-[186px] w-full h-[365px]' alt="" />
+                    <img src={require("../assets/space-from-earth.webp")} className='absolute bottom-0 right-0 md:h-full xl:w-[372px] lg:w-[254px] md:w-[186px] w-full h-[365px]' alt="" />
                 </div>
             </div>
         </div>

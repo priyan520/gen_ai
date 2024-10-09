@@ -6,16 +6,22 @@ import Our_ai_tool from '../home_componats/Our_ai_tool';
 import Priceing from '../home_componats/Priceing';
 import Questions from '../home_componats/Questions';
 import Banner from '../home_componats/Banner';
+import Testimonial from '../home_componats/Testimonial';
+import Download from '../home_componats/Download';
+import Footer from '../home_componats/Footer';
 
 const Home = () => (
   <>
     <Header />
     <Leandding />
     <Achivement />
-    {/* <Our_ai_tool/> */}
+    {/* <Our_ai_tool /> */}
     <Priceing />
     <Questions />
-    <Banner/>
+    <Banner />
+    <Testimonial />
+    <Download />
+    <Footer />
   </>
 )
 
