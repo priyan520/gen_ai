@@ -2,10 +2,12 @@ import React from 'react'
 import { MdManageAccounts } from "react-icons/md";
 import { FaMobileAlt } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import Test from './Test';
 
 const Achivement = () => {
     return (
-        <section className='achivment bg-black py-[54px]'>
+        <section className='achivment py-[54px] relative'>
+            <Test className="absolute top-0 left-0"></Test>
             <div className="container_custom xl:w-[1440px] mx-auto">
                 <div className="con flex justify-center xl:gap-28 lg:gap-24 md:gap-20 md:gap-y-0 xsm:gap-x-16 2xsm:gap-x-16 gap-x-12 gap-y-6 flex-wrap">
                     <div className="main_box">

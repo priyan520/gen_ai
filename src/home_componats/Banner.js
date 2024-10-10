@@ -1,9 +1,12 @@
 import React from 'react'
+import Test from './Test'
 
 const Banner = () => {
 
   return (
-    <section className='benner py-[120px] bg-[#0A0B0E]'>
+    <section className='benner py-[120px] bg-[#0A0B0E] relative'>
+        
+
         <div className="container mx-auto">
             <div className="con">
                 <div className="main_benner xl:w-[1200px] lg:w-[864px] md:w-[688px] 2xsm:w-[335px] w-full mx-auto bg-[#121418] xl:h-[392px] lg:h-[268px] md:h-[196px] h-[581px]  md:flex items-center justify-center relative rounded-3xl overflow-hidden">

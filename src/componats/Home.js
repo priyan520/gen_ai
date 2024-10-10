@@ -9,6 +9,7 @@ import Banner from '../home_componats/Banner';
 import Testimonial from '../home_componats/Testimonial';
 import Download from '../home_componats/Download';
 import Footer from '../home_componats/Footer';
+import Test from '../home_componats/Test';
 
 const Home = () => (
   <>
