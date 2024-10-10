@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className='footer bg-[#040507]'>
         <div className="container w-[1440px] xl:py-[80px] xl:px-[268px] lg:px-[80px] lg:py-[60px] md:px-[40px] md:py-[50px] xsm:px-[65px] xsm:py-10 mx-auto p-10 ">
-            <div className="con flex justify-between ">
+            <div className="con flex justify-between relative">
                 <div className="p_1">
                     <div className="headding flex gap-4 items-center">
                         <img src={require("../assets/imagine-logo.gif")} className='rounded-2xl md:h-[50px] md:w-[50px] size-[40px]' alt="" />
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
                 <div className="p_2">
                     <div className="img">
-                        <img src={require("../assets/astronaut.webp")} className='size-[340px] sp_img' alt="" />
+                        <img src={require("../assets/astronaut.webp")} className='md:size-[340px] size-[150px] md:static absolute sp_img 2xsm:bottom-0 2xsm:right-0 bottom-[-30px] right-[-30px]' alt="" />
                     </div>
                 </div>
             </div>
