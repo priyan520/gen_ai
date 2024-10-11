@@ -1,5 +1,6 @@
 import React from 'react'
 import Test from './Test'
+import { FaDiscord } from "react-icons/fa";
 
 const Banner = () => {
 
@@ -15,7 +16,7 @@ const Banner = () => {
                         <h3 className='text-white  xl:text-[46px] lg:text-[36px] md:text-[24px] font-semibold mb-4 text-[30px] md:tracking-0 tracking-[0.3px]'>Follow Us on Discord</h3>
                         <p className='text-[#B6B6B7] xl:text-[18px] lg:text-[16px] md:text-[14px] xl:w-[455px] lg:w-[355px] md:w-[315px] mx-auto mb-6'>Connect and share innovative ideas with over 63K+ creative like minded people</p>
                         <button className='border-0'>
-                            <a href="" className='text-white py-[12px] px-6 block bg-[#8850FF] rounded-[10px] text-[16px] font-semibold'>Follow Us</a>
+                            <a href="" className='text-white py-[12px] px-6 bg-[#8850FF] rounded-[10px] text-[16px] font-semibold flex gap-2 items-center glow_follow_button'><span>Follow Us </span> <FaDiscord className='text-[20px]' /></a>
                         </button>
                     </div>
                     <img src={require("../assets/space-from-earth.webp")} className='absolute bottom-0 right-0 md:h-full xl:w-[372px] lg:w-[254px] md:w-[186px] w-full h-[365px]' alt="" />

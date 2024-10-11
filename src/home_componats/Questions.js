@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCaretDown } from "react-icons/fa";
+import { MdArrowOutward } from 'react-icons/md';
 
 const Questions = () => {
 
@@ -7,12 +8,16 @@ const Questions = () => {
 
     function accHendler(index){
 
-        if(acc[index].style.display == ""){
-            acc[index].style.display = "block" 
-            acc[index].style.height = "auto"
+        console.log(acc[index].style.height)
+
+        if(acc[index].style.height == ""){
+            acc[index].style.height = "198px";
+            acc[index].style.visibility = "visible";
+            acc[index].style.opacity = "1";
         }else{
-            acc[index].style.display = ""
-            acc[index].style.height = "auto"
+            acc[index].style.height = "";
+            acc[index].style.opacity = "0";
+            acc[index].style.visibility = "hidden";
         }
     }
 
@@ -21,11 +26,11 @@ const Questions = () => {
         <div className="container_custom xl:w-[1440px] lg:px-[80px] mx-auto md:px-[40px] xsm:px-[45px] px-[20px]">
             <div className="con lg:flex justify-center lg:text-left text-center gap-16">
                 <div className="p_1 lg:w-[476px] w-[100%]">
-                    <h2 className='text_sp md:text-[46px] text-[30px] font-semibold mb-[18px]'>Have questions?
+                    <h2 className='text_sp md:text-[46px] text-[30px] font-semibold mb-[18px] md:leading-[54px] leading-[38px]'>Have questions?
                     <br />We have answers!</h2>
-                    <p className='text-[#B6B6B7] mb-6'>Want to know more? You can email us anytime atsupport@imagine.com</p>
+                    <p className='text-[#B6B6B7] mb-6'>Want to know more? You can email us anytime at <span className='text-[#a073ff]'>support@imagine.com</span></p>
                     <button className='border-0'>
-                        <a href="" className='text-white py-[12px] px-6 block bg-[#8850FF] rounded-[10px] text-[16px] font-semibold'>Launch App</a>
+                        <a href="" className='text-white py-[12px] px-6 bg-[#8850FF] sp_button_hover rounded-[10px] text-[16px] font-semibold items-center gap-2 flex'>Launch App <MdArrowOutward className='text-[20px]'/> </a>
                     </button>
                 </div>
                 <div className="p_2 lg:mt-0 mt-16">
@@ -33,29 +38,29 @@ const Questions = () => {
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white  md:text-[16px] text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(0)}>
-                                    <span className='text-left'>What is Imagine? </span><FaCaretDown />   
+                                    <span className='text-left non-selectable'>What is Imagine? </span><FaCaretDown />   
                                 </div>
-                                <p className='h-[0px] text-left text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                <p className='h-[0px] non-selectable text-left text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                             
                         </div>
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px] text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(1)}>
-                                    <span className='text-left'>Can I use the images generated by the platform for commercial purposes?</span><FaCaretDown />   
+                                    <span className='text-left non-selectable'>Can I use the images generated by the platform for commercial purposes?</span><FaCaretDown />   
                                 </div>
-                                <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                         </div>
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px] text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(2)}>
-                                    <span className='text-left'>
+                                    <span className='text-left non-selectable'>
                                         What payment options are available?
                                     </span>
                                     <FaCaretDown />
                                 </div>
-                                <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
 
                             
@@ -63,49 +68,49 @@ const Questions = () => {
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px] text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(3)}>
-                                    <span className='text-left'>
+                                    <span className='text-left non-selectable'>
                                         Is there a free trial?
                                     </span>
                                     <FaCaretDown />
                                 </div>
                                 
-                                 <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                 <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                         </div>
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px] text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(4)}>
-                                    <span className='text-left'>
+                                    <span className='text-left non-selectable'>
                                         Can I cancel my Plan? 
                                     </span>
                                     <FaCaretDown />
                                 </div>
                                 
-                                 <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                 <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                         </div>
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px]     text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(5)}>
-                                    <span className='text-left'>
+                                    <span className='text-left non-selectable'>
                                         Can I upgrade or downgrade my current plan? 
                                     </span>
                                     <FaCaretDown />
                                 </div>
                                 
-                                 <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                 <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                         </div>
                         <div className="main_box">
                             <div className="sub_box bg-[#121317] mb-6 xl:w-[676px] lg:w-[408px] w-full rounded-[14px] p-5 text-white md:text-[16px]     text-[14px]">
                                 <div className="flex justify-between items-center" onClick={() => accHendler(6)}>
-                                    <span className='text-left'>
+                                    <span className='text-left non-selectable'>
                                         What is Imagine's refund policy? 
                                     </span>
                                     <FaCaretDown />
                                 </div>
                                 
-                                 <p className='h-[0px] text-[12px] max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
+                                 <p className='h-[0px] text-[12px] non-selectable max-w-full text-white acc_main mt-[10px]'>Imagine AI is an innovative AI art generator accessible on the web, Android, and iOS platforms, designed to provide individuals with easy access to the latest generative art technologies. By harnessing the power of artificial intelligence, Imagine AI enables users to create captivating and unique artwork with just a few simple steps. Imagine AI leverages cutting-edge algorithms and deep learning models to generate a wide range of artistic styles and themes. From abstract compositions to realistic landscapes, users can explore and experiment with various artistic possibilities without requiring prior artistic expertise. This democratization of art creation empowers users to unleash their creativity and express themselves through digital art forms. The platform offers a user-friendly interface, making it accessible to both beginners and experienced artists. Users can start with a blank canvas or use predefined templates as a starting point. Imagine AI provides a vast array of tools and features to customize and fine-tune the generated artwork, allowing users to add personal touches and make each creation truly spectacular.</p>
                             </div>
                         </div>
                     </div>

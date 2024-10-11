@@ -16,9 +16,9 @@ const Testimonial = () => {
                 </div>
                 <div className="content mt-20">
                     <div className="testimonial_container">
-                        <div className="part_1 flex justify-between gap-[24px] flex-wrap">
+                        <div className="part_1 flex justify-between gap-[24px] gap-y-10 flex-wrap">
                             <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
                                     <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
                                         <div className="data flex items-center gap-2">
                                             <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
@@ -43,32 +43,7 @@ const Testimonial = () => {
                             </div>
                             </div>
                             <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
-                                    <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
-                                        <div className="data flex items-center gap-2">
-                                            <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
-                                            <span className="name text-left">
-                                                <h3 className='text-white'>Sarah Jones</h3>
-                                                <span className='text-[#B6B6B7] text-[14px]'>Artist</span>
-                                            </span>
-                                        </div>
-                                        <div className="star 2xsm:mt-0  flex gap-1">
-                                            <FaStar className='text-[#F2A000]' />
-                                            <FaStar className='text-[#F2A000]' />
-                                            <FaStar className='text-[#F2A000]' />
-                                            <FaStar className='text-[#F2A000]' />
-                                            <FaStar className='text-[#F2A000]' />
-                                        </div>
-                                    </div>
-                                    <div className="content">
-                                        <p className='text-white text-[16px] 2xsm:leading-[28px] leading-[20px] text-left'>
-                                            ImagineArt is the best AI Image generator! I can brainstorm ideas and get stunning visuals in seconds. It helps me overcome creative block and explore new artistic directions.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
                                     <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
                                         <div className="data flex items-center gap-2">
                                             <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
@@ -93,7 +68,7 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
                                     <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
                                         <div className="data flex items-center gap-2">
                                             <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
@@ -118,7 +93,7 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
                                     <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
                                         <div className="data flex items-center gap-2">
                                             <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
@@ -143,7 +118,32 @@ const Testimonial = () => {
                                 </div>
                             </div>
                             <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
-                                <div className="sub_box h-fit p-6 bg-[#121418] rounded-[20px]">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
+                                    <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
+                                        <div className="data flex items-center gap-2">
+                                            <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />
+                                            <span className="name text-left">
+                                                <h3 className='text-white'>Sarah Jones</h3>
+                                                <span className='text-[#B6B6B7] text-[14px]'>Artist</span>
+                                            </span>
+                                        </div>
+                                        <div className="star 2xsm:mt-0  flex gap-1">
+                                            <FaStar className='text-[#F2A000]' />
+                                            <FaStar className='text-[#F2A000]' />
+                                            <FaStar className='text-[#F2A000]' />
+                                            <FaStar className='text-[#F2A000]' />
+                                            <FaStar className='text-[#F2A000]' />
+                                        </div>
+                                    </div>
+                                    <div className="content">
+                                        <p className='text-white text-[16px] 2xsm:leading-[28px] leading-[20px] text-left'>
+                                            ImagineArt is the best AI Image generator! I can brainstorm ideas and get stunning visuals in seconds. It helps me overcome creative block and explore new artistic directions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="main_box xl:w-[32%] lg:w-[420px] w-full">
+                                <div className="sub_box_user h-fit p-6 bg-[#121418] rounded-[20px]">
                                     <div className="user_info 2xsm:flex items-center gap-2 justify-between mb-4">
                                         <div className="data flex items-center gap-2">
                                             <img src={require("../assets/t_1.webp")} alt="" className='h-[44px] w-[44px] rounded-full' />

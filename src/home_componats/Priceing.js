@@ -23,7 +23,7 @@ const Priceing = () => {
                     </div>
                     <div className="box_container flex gap-5 mt-[54px] justify-center flex-wrap">
                         <div className="main_box">
-                            <div className="sub_box p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] ">
+                            <div className="sub_box_price p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] ">
                                 <div className="p_1 flex justify-between mb-2">
                                     <h4 className='text-white text-[24px] font-semibold'>Standard</h4>
                                     <button className='py-1 px-2 rounded-[15px] text-white font-semibold' style={{border: "2px solid #7850FF"}}>16K +</button>
@@ -55,7 +55,7 @@ const Priceing = () => {
                                 </div>
                                 <div className="p_5 mt-6">
                                     <button className='border-0 w-[100%]'>
-                                        <a href="" className='text-white py-[12px] px-5 w-[100%] block bg-[#2C2D31] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
+                                        <a href="" className='text-white py-[12px] px-5 w-[100%] block dark_subscribe bg-[#2C2D31] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
                                     </button>
                                 </div>
                                 <div className="p_6 my-[34px] bg-[#2c2d31] h-[2px]" ></div>
@@ -71,7 +71,7 @@ const Priceing = () => {
                             </div>
                         </div>
                         <div className="main_box" >
-                            <div className="sub_box p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] " style={{border: "2px solid #714EFF" , transform: "scale(1.                              01)"}}>
+                            <div className="sub_box special_price_box p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] " style={{border: "2px solid #714EFF" , transform: "scale(1.                              01)"}}>
                                 <div className="p_1 flex justify-between mb-2">
                                     <h4 className='text-white text-[24px] font-semibold'>Premium</h4>
                                     <button className='py-1 px-2 rounded-[15px] text-white font-semibold' style={{border: "2px solid #7850FF"}}>100K +</button>
@@ -103,7 +103,7 @@ const Priceing = () => {
                                 </div>
                                 <div className="p_5 mt-6">
                                     <button className='border-0 w-[100%]'>
-                                        <a href="" className='text-white py-[12px] px-5 w-[100%] block bg-[#8850FF] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
+                                        <a href="" className='text-white py-[12px] subscribe_main px-5 w-[100%] block bg-[#8850FF] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
                                     </button>
                                 </div>
                                 <div className="p_6 my-[34px] bg-[#2c2d31] h-[2px]" ></div>
@@ -119,7 +119,7 @@ const Priceing = () => {
                             </div>
                         </div>
                         <div className="main_box">
-                            <div className="sub_box p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] ">
+                            <div className="sub_box_price p-6 bg-[#1E2023] xl:w-[350px] lg:w-[272px] md:w-[508px] xsm:w-[335px] 2xsm:w-[280px] rounded-[1rem] ">
                                 <div className="p_1 flex justify-between mb-2">
                                     <h4 className='text-white text-[24px] font-semibold'>Professional</h4>
                                     <button className='py-1 px-2 rounded-[15px] text-white font-semibold' style={{border: "2px solid #7850FF"}}>40K +</button>
@@ -151,7 +151,7 @@ const Priceing = () => {
                                 </div>
                                 <div className="p_5 mt-6">
                                     <button className='border-0 w-[100%]'>
-                                        <a href="" className='text-white py-[12px] px-5 w-[100%] block bg-[#2C2D31] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
+                                        <a href="" className='text-white dark_subscribe py-[12px] px-5 w-[100%] block bg-[#2C2D31] rounded-[10px] text-[14px] font-semibold'>Subscribe</a>
                                     </button>
                                 </div>
                                 <div className="p_6 my-[34px] bg-[#2c2d31] h-[2px]" ></div>

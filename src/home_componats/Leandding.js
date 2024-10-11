@@ -83,7 +83,7 @@ const Leandding = () => {
   }
 
   return (
-      <div className="home relative">
+      <div className="home relative mt-[75px]">
         <Test className="absolute top-0 left-0"></Test>
         <section className='slider_section pt-8 pb-0'>
           <div className="container_custom">
