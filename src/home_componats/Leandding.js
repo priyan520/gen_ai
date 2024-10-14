@@ -50,7 +50,7 @@ const Leandding = () => {
                   if(pause){
                     animation.value = animation.value.substr(0 , animation.value.length - 1)
                   }
-                } , 25)
+                } , 50)
             }, 1000)
           }
         }
@@ -66,7 +66,7 @@ const Leandding = () => {
         }
 
 
-      }, 50)
+      }, 40)
 
 
   },[])
