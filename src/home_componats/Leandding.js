@@ -50,7 +50,7 @@ const Leandding = () => {
                   if(pause){
                     animation.value = animation.value.substr(0 , animation.value.length - 1)
                   }
-                } , 100)
+                } , 25)
             }, 1000)
           }
         }
@@ -66,7 +66,7 @@ const Leandding = () => {
         }
 
 
-      }, 150)
+      }, 50)
 
 
   },[])
@@ -511,7 +511,7 @@ const Leandding = () => {
                 </p>
               </div>
               <div className="inp relative hidden lg:block w-fit mx-auto mt-[32px] items-center">
-                <input type="text" name="" value={inp_val} className='w-[664px] p-4 pl-4 pr-1 rounded-full' onChange={(e) => setinp_val(e.target.value)} onClick={() => handleTextControler()} id="animation" />
+                <input type="text" name="" value={inp_val} className='w-[664px] p-4 pl-4 pr-1 rounded-full text-ssm' onChange={(e) => setinp_val(e.target.value)} onClick={() => handleTextControler()} id="animation" />
                 <button className='block'><a className='absolute py-[8px] px-[45px] flex bg-[#8550FF] font-semibold text-white rounded-full top-[8px] right-[10px] gap-2 items-center'><BsStars /> <span>Create</span></a></button>
               </div>
               <div className="button text-center mt-[32px] lg:hidden block">
