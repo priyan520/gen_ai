@@ -11,7 +11,7 @@ const Our_ai_tool = () => {
                             <h2 className='md:text-[46px] font-bold text-[30px]' >Our AI Tools Suite</h2>
                             <p className='text-[#b6b6b7] md:w-[460px] mx-auto md:text-[18px] xsm:w-[335px] w-[280px] text-[14px] mt-[18px]  '>Revolutionize your creative workflow with ImagineArt AI Tools Suite. This suite empowers you with cutting-edge AI technology to generate stunning AI art and captivating videos.</p>
                         </div>
-                        <div className="main_content xl:mt-[150px] mt-[100px] items-center 2xl:gap-28 xl:gap-[167px] gap-12 md:flex hidden">
+                        <div className="main_content xl:mt-[150px] mt-[100px] items-center 2xl:gap-28 xl:gap-[200px] gap-12 md:flex hidden">
                             <div className="main_img !sticky !top-[0px]">
                                 <video src={"https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"} className='2xl:h-[530px] 2xl:w-[530px] xl:size-[438px] lg:size-[400px] size-[300px] rounded-[25px] sticky top-[0px]' muted loop autoPlay ></video>
                             </div>

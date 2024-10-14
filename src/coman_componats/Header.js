@@ -29,7 +29,7 @@ const Header = () => {
   }
 
   return (
-    <section className="header bg-[#040507] lg:py-0 py-4 fixed top-0 z-50 w-full">
+    <section className="header bg-[#040507 bg-transparent lg:py-0 py-4 fixed top-0 z-50 w-full">
       <div className="reletive">
         <div className="container_custom lgest_for_header:w-[1749px] xl:w-[1280px] lg:w-[864px] md:w-[720px] xsm:w-[393px] 2xsm:w-[343px] smest:w-[300px] mx-auto">
           <div className="con">

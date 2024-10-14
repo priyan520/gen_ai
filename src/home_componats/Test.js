@@ -12,7 +12,7 @@ const Test = () => {
     preset: "firefly",
   };
 
-  return <Particles options={options} init={customInit} className="h-full w-full absolute top-0 left-0" />;
+  return <Particles options={options} init={customInit} className="max-h-[189px] absolute top-0 left-0" />;
 };
 
 export default Test;

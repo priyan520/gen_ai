@@ -38,8 +38,7 @@
 }
 
 .sp_img {
-  animation: scroll 5s ease infinite;
-  transition: .5s;
+  animation: scroll 3s ease-in-out infinite;
 }
 
 @keyframes scroll {
@@ -47,7 +46,7 @@
     transform: translateY(0);
   }
   10% {
-    transform: translateY(10%);
+    transform: translateY(-15px);
   }
 }
 
@@ -285,4 +284,17 @@
   /* box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); */
 }
 
+.testimonial{
+  background: radial-gradient(44.36% 38.02% at 50% 0,#272b36 0,#0c0d0f 100%),hsla(0,0%,100%,.02);
+}
 
+.footer::after{
+  height: 100%;
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(180deg);
+}

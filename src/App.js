@@ -6,11 +6,11 @@ import Home from './componats/Home';
 function App() {
 
   return (
-    <>
+    <div className='overflow-hidden'>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

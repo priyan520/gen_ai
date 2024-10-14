@@ -10,6 +10,7 @@ import Testimonial from '../home_componats/Testimonial';
 import Download from '../home_componats/Download';
 import Footer from '../home_componats/Footer';
 import Test from '../home_componats/Test';
+import Slider2 from '../home_componats/Slider2';
 
 const Home = () => (
   <>
@@ -17,6 +18,7 @@ const Home = () => (
     <Leandding />
     <Achivement />
     <Our_ai_tool />
+    <Slider2 />
     <Priceing />
     <Questions />
     <Banner />
