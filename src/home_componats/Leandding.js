@@ -90,33 +90,8 @@ const Leandding = () => {
             <div className="con">
               <div className="slider_container">
                 <div className="silder_div">
-                  <div className="slider_1">
-                    <OwlCarousel className='owl-theme' loop={true}  responsive={{
-          0: {
-            items: 1.5,
-          },
-          375: {
-            items: 1.75,
-          },
-          425:{
-            items: 2,
-          },
-          768: {
-            items: 3,
-          },
-          1024: {
-            items: 4, 
-          },
-          1440: {
-            items: 5,
-          },
-          1920: {
-            items: 6.6,
-          },
-          2560: {
-            items: 8.5,
-          }
-        }} center={true} autoplay autoplayTimeout={1000} dots={false} margin={10}>
+                  <div className="carousel xl:w-[5830px] md:w-[4780px] w-[3730px]">
+                    <div className='group w-[3000px] gap-[20px]'>
                         <div className="item">
                           <img src={require("../assets/1_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
@@ -180,35 +155,75 @@ const Leandding = () => {
                         <div className="item">
                           <img src={require("../assets/1_21.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
-                    </OwlCarousel>
+                    </div>
+                    <div className='group w-[3000px] gap-[20px]'>
+                        <div className="item">
+                          <img src={require("../assets/1_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_2.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_3.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_4.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_5.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_6.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_7.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />  
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_8.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_9.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_10.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_11.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_12.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_13.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_14.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_15.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_16.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_17.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_18.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_19.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_20.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/1_21.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                    </div>
                   </div>
-                  <div className="slider_2 mt-2">
-                    <OwlCarousel className='owl-theme' loop={true} responsive={{
-          0: {
-            items: 1.5,
-          },
-          375: {
-            items: 1.75,
-          },
-          425:{
-            items: 2,
-          },
-          768: {
-            items: 3,
-          },
-          1024: {
-            items: 4, 
-          },
-          1440: {
-            items: 5,
-          },
-          1920: {
-            items: 6.6,
-          },
-          2560: {
-            items: 8.5,
-          }
-        }} autoplay items={5} center={true} autoplayTimeout={1000} dots={false} margin={10}>
+                  <div className="carousel xl:w-[5830px] md:w-[4780px] w-[3730px] mt-2">
+                    <div className='group group_2 w-[3000px] gap-[20px]'>
                         <div className="item">
                           <img src={require("../assets/2_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
@@ -272,35 +287,75 @@ const Leandding = () => {
                         <div className="item">
                           <img src={require("../assets/2_21.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
-                    </OwlCarousel>
+                    </div>
+                    <div className='group group_2 w-[3000px] gap-[20px]'>
+                        <div className="item">
+                          <img src={require("../assets/2_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_2.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_3.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_4.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_5.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_6.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_7.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_8.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_9.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_10.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_11.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_12.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_13.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_14.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_15.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_16.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_17.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_18.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_19.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_20.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/2_21.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                    </div>
                   </div>
-                  <div className="slider_3 mt-2">
-                    <OwlCarousel className='owl-theme' loop={true} responsive={{
-          0: {
-            items: 1.5,
-          },
-          375: {
-            items: 1.75,
-          },
-          425:{
-            items: 2,
-          },
-          768: {
-            items: 3,
-          },
-          1024: {
-            items: 4, 
-          },
-          1440: {
-            items: 5,
-          },
-          1920: {
-            items: 6.6,
-          },
-          2560: {
-            items: 8.5,
-          }
-        }} autoplay items={5} center={true} autoplayTimeout={1000} dots={false} margin={10}>
+                  <div className="carousel xl:w-[5830px] md:w-[4780px] w-[3730px] mt-2">
+                    <div className='group w-[3000px] gap-[20px]'>
                         <div className="item">
                           <img src={require("../assets/3_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
@@ -361,7 +416,75 @@ const Leandding = () => {
                         <div className="item">
                           <img src={require("../assets/3_20.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
                         </div>
-                    </OwlCarousel>
+                        <div className="item">
+                          <img src={require("../assets/3_7.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                    </div>
+                    <div className='group w-[3000px] gap-[20px]'>
+                        <div className="item">
+                          <img src={require("../assets/3_1.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_2.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_3.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_4.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_5.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_6.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_7.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_8.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_9.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_10.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_11.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_12.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_13.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_14.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_15.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_16.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_17.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_18.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_19.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_20.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                        <div className="item">
+                          <img src={require("../assets/3_7.webp")} className='rounded-xl xl:!w-[280px] xl:!h-[158px] md:!w-[245px] md:!h-[138px] !w-[210px] !h-[120px]' alt="" />
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -384,7 +507,7 @@ const Leandding = () => {
                   Imagine AI Art Generator
                 </h1>
                 <p className='xl:text-[18px] mt-[18px] leading-[28px] xl:w-[650px] md:w-[580px] 2xsm:w-[335px] w-[300px] mx-auto text-[#b6b6b7] text-center'>
-                  Create AI Art and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
+                  Create AI yArt and turn your imaginations into reality with Imagine's AI Art Generator and produce stunning visuals to cover up your artistic thoughts.
                 </p>
               </div>
               <div className="inp relative hidden lg:block w-fit mx-auto mt-[32px] items-center">
