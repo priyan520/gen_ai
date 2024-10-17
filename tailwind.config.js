@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        '3xl' : '2000px',
         'lgest_for_header': '1800px',
         'smest': '320px',
         '2xsm': '375px',    // For screens 375px and up

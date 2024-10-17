@@ -337,7 +337,7 @@
 .group {
   /* width: 50px !important; */
   will-change: transform;
-  animation: scrolling 60s linear infinite;
+  animation: scrolling 120s linear infinite;
 }
 
 @keyframes scrolling {
@@ -352,7 +352,7 @@
 
 .group_2{
   will-change: transform;
-  animation: scrolling_2 60s linear infinite;
+  animation: scrolling_2 120s linear infinite;
 }
 
 @keyframes scrolling_2 {
@@ -375,4 +375,50 @@
 .group {
   display: flex;
   padding-right: 20px;
+}
+
+/* src/home_components/slider_component/SliderComponent.css */
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Match height to slider */
+  overflow: hidden; /* Hide overflowing slides */
+  position: relative; /* For absolute positioning of slides */
+}
+
+.slide {
+  position: absolute; /* Use absolute positioning to overlay slides */
+  left: 0; /* Align to left */
+  right: 0; /* Align to right */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+/* This makes only the current slide fully visible */
+.slide:not(:nth-child(1)) {
+  opacity: 0; /* Hide non-active slides initially */
+}
+
+.slide:nth-child(1) {
+  opacity: 1; /* Show the first slide by default */
+}
+
+.our_ai_tool .sub_content{
+  transition: .3s;
+}
+
+.size-full_cus{
+
+}
+
+.size-0_cus{
+  height: 0 !important;
+}
+body{
+  overflow-x: hidden;
+}
+.our_ai_tool video{
+  transition: .3s;
 }

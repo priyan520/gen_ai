@@ -8,7 +8,17 @@ const Questions = () => {
 
     function accHendler(index){
 
-        console.log(acc[index].style.height)
+
+        
+        for(let i = 0 ; i < acc.length ; i++){
+            i != index ? (() => {
+                acc[i].style.height = "";
+                acc[i].style.opacity = "0";
+                acc[i].style.visibility = "hidden";
+                acc[i].style.marginTop = "0px";
+            })():(() => {})()
+        }
+
 
         if(acc[index].style.height == ""){
             acc[index].style.height = "198px";
