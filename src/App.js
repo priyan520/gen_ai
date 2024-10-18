@@ -6,7 +6,7 @@ import Home from './componats/Home';
 function App() {
 
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-x-hidden'>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>

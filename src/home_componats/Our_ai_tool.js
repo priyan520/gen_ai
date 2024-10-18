@@ -9,6 +9,7 @@ const Our_ai_tool = () => {
     const [size4 , setsize4] = useState("size-0_cus");
     const [size5 , setsize5] = useState("size-0_cus");
     const [size6 , setsize6] = useState("size-0_cus");
+    const [lineWidth , setLineWidth] = useState(0);
 
   useEffect(() => {
     var vidio_height
@@ -19,6 +20,10 @@ const Our_ai_tool = () => {
     var xl_2 = 0;
 
     const handleScroll = () => {
+
+      console.log(window.screenY / 39)
+
+        document.getElementById('line').style.width = (window.scrollY / 39)+"px";
 
       console.log(window.innerWidth )
       if(window.innerWidth >= 2000){
@@ -141,7 +146,7 @@ const Our_ai_tool = () => {
         setsize4("size-full_cus")
         setsize5("size-0_cus")
         setsize6("size-0_cus")
-      } else if (window.scrollY >=  (xl_2 * 5900)+(x_lg * 5620)+(lg * 5610)+(lg_sm * 6610)+(md * 6130) && window.scrollY < (xl_2 * 7100)+(x_lg * 6750)+(lg * 6740)+(lg_sm * 8010)+(md * 7410)) {
+      } else if (window.scrollY >=  (xl_2 * 5900)+(x_lg * 5620)+(lg * 5610)+(lg_sm * 6610)+(md * 6130) && window.scrollY < (xl_2 * 7100)+(x_lg * 7000)+(lg * 6740)+(lg_sm * 8010)+(md * 7410)) {
         document.getElementById("output1").style.visibility = "hidden";
         document.getElementById("output4").style.visibility = "hidden";
         document.getElementById("output5").style.visibility = "visible";
@@ -162,7 +167,7 @@ const Our_ai_tool = () => {
         setsize4("size-0_cus")
         setsize5("size-full_cus")
         setsize6("size-0_cus")
-      } else if (window.scrollY >= (xl_2 * 7100)+(x_lg * 6750)+(lg * 6740)+(lg_sm * 7990)+(md * 7410)) {
+      } else if (window.scrollY >= (xl_2 * 7100)+(x_lg * 7000)+(lg * 6740)+(lg_sm * 7990)+(md * 7410)) {
         document.getElementById("output1").style.visibility = "hidden";
         document.getElementById("output5").style.visibility = "hidden";
         document.getElementById("output6").style.visibility = "visible";
@@ -196,7 +201,7 @@ const Our_ai_tool = () => {
 
   return (
     <section
-      className="main_section pb-96 bg-[#0A0B0E] 3xl:h-[7300px] xl:h-[7000px] md:h-[7500px] 2xl:h-[7000px] overflow-hidden"
+      className="main_section mb:pb-96 bg-[#0A0B0E] 3xl:h-[7000px] xl:h-[6300px] md:h-[7500px] 2xl:h-[7000px] overflow-hidden"
       id="main_section"
     >
       <section className="our_ai_tool xl:w-[1440px] mx-auto">
@@ -214,7 +219,7 @@ const Our_ai_tool = () => {
             </div>
 
             {/* Desktop and large screen1s */}
-            <div className=" 3xl:top-[110vh] md:top-[130vh] xl:h-[7000px] 2xl:h-[7000px] md:h-[7500px] absolute">
+            <div className=" 3xl:top-[1350px] md:top-[1250px] xl:h-[6300px] 2xl:h-[7000px] md:h-[7500px] absolute">
               <div className="main_content xl:mt-[150px] mt-[100px] items-center 2xl:gap-28 xl:gap-[200px] gap-10 md:flex hidden !sticky 3xl:top-[400px] 2xl:top-[200px] xl:top-[150px] lg:top-[200px] md:top-[250px]">
                 <div className="main_img ">
                   {" "}
@@ -231,6 +236,11 @@ const Our_ai_tool = () => {
                   ></video>
                 </div>
                 <div className="main_sub_contnt_holder">
+                  <div className="line_box mb-12 ">
+                    <div className={"line w-[192px] h-[4px] bg-[#1E2023] relative"}>
+                      <div className="line1 rounded-full max-w-full" id="line"></div>
+                    </div>
+                  </div>
                   <div className = {"sub_content relative lg:h-[224px] md:h-[282px] xl:w-[476px]  md:w-[390px] overflow-hidden invisible  opacity-0 "+size1}
                     id="output1"
                   >
@@ -476,7 +486,7 @@ const Our_ai_tool = () => {
 
             {/* Mobile and small screens */}
             <div className="main_content xl:mt-[150px] mt-[100px] items-center xl:gap-28 gap-12 md:hidden block">
-              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem]">
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem] mb-10">
                 <div className="sub_box">
                   <div className="main_img">
                     <video
@@ -484,6 +494,182 @@ const Our_ai_tool = () => {
                         "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-img.webm"
                       }
                       className="size-[300px] rounded-[25px]"
+                      muted
+                      loop
+                      autoPlay
+                    ></video>
+                  </div>
+                  <div className="sub_content w-auto">
+                    <h3 className="md:text-[36px] md:mt-0 mt-4 text-[24px] font-semibold mb-[18px]">
+                      Text to Image
+                    </h3>
+                    <p className="xl:w-[476px] text-[#b6b6b7] lg:w-[390px] md:w-[328px] md:text-[14px] text-[12px] w-full mb-[24px]">
+                      Ignite your creative spark with Imagine AI Image
+                      Generator. Describe your vision with words, and watch the
+                      powerful tool translate them into captivating artwork.
+                      Catalyze a flurry of ideas and conquer creative
+                      roadblocks.
+                    </p>
+                    <button className="border-0 w-[100%]">
+                      <a
+                        href=""
+                        className="text-white py-[10px] md:px-[18px] w-[100%] block bg-[#8850FF] rounded-[10px] font-semibold"
+                      >
+                        Generate Image
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem] mb-10">
+                <div className="sub_box">
+                  <div className="main_img">
+                    <video
+                      src={
+                        "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/realtime-text.webm"
+                      }
+                      className="size-[300px] rounded-[25px]"
+                      muted
+                      loop
+                      autoPlay
+                    ></video>
+                  </div>
+                  <div className="sub_content w-auto">
+                    <h3 className="md:text-[36px] md:mt-0 mt-4 text-[24px] font-semibold mb-[18px]">
+                      Text to Image
+                    </h3>
+                    <p className="xl:w-[476px] text-[#b6b6b7] lg:w-[390px] md:w-[328px] md:text-[14px] text-[12px] w-full mb-[24px]">
+                      Ignite your creative spark with Imagine AI Image
+                      Generator. Describe your vision with words, and watch the
+                      powerful tool translate them into captivating artwork.
+                      Catalyze a flurry of ideas and conquer creative
+                      roadblocks.
+                    </p>
+                    <button className="border-0 w-[100%]">
+                      <a
+                        href=""
+                        className="text-white py-[10px] md:px-[18px] w-[100%] block bg-[#8850FF] rounded-[10px] font-semibold"
+                      >
+                        Generate Image
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem] mb-10">
+                <div className="sub_box">
+                  <div className="main_img">
+                    <video
+                      src={
+                        "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/text-to-video.webm"
+                      }
+                      className="size-[300px] rounded-[25px]"
+                      muted
+                      loop
+                      autoPlay
+                    ></video>
+                  </div>
+                  <div className="sub_content w-auto">
+                    <h3 className="md:text-[36px] md:mt-0 mt-4 text-[24px] font-semibold mb-[18px]">
+                      Text to Image
+                    </h3>
+                    <p className="xl:w-[476px] text-[#b6b6b7] lg:w-[390px] md:w-[328px] md:text-[14px] text-[12px] w-full mb-[24px]">
+                      Ignite your creative spark with Imagine AI Image
+                      Generator. Describe your vision with words, and watch the
+                      powerful tool translate them into captivating artwork.
+                      Catalyze a flurry of ideas and conquer creative
+                      roadblocks.
+                    </p>
+                    <button className="border-0 w-[100%]">
+                      <a
+                        href=""
+                        className="text-white py-[10px] md:px-[18px] w-[100%] block bg-[#8850FF] rounded-[10px] font-semibold"
+                      >
+                        Generate Image
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem] mb-10">
+                <div className="sub_box">
+                  <div className="main_img">
+                    <video
+                      src={
+                        "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/realtime-canvas.webm"
+                      }
+                      className="size-[300px] rounded-[25px]"
+                      muted
+                      loop
+                      autoPlay
+                    ></video>
+                  </div>
+                  <div className="sub_content w-auto">
+                    <h3 className="md:text-[36px] md:mt-0 mt-4 text-[24px] font-semibold mb-[18px]">
+                      Text to Image
+                    </h3>
+                    <p className="xl:w-[476px] text-[#b6b6b7] lg:w-[390px] md:w-[328px] md:text-[14px] text-[12px] w-full mb-[24px]">
+                      Ignite your creative spark with Imagine AI Image
+                      Generator. Describe your vision with words, and watch the
+                      powerful tool translate them into captivating artwork.
+                      Catalyze a flurry of ideas and conquer creative
+                      roadblocks.
+                    </p>
+                    <button className="border-0 w-[100%]">
+                      <a
+                        href=""
+                        className="text-white py-[10px] md:px-[18px] w-[100%] block bg-[#8850FF] rounded-[10px] font-semibold"
+                      >
+                        Generate Image
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem] mb-10">
+                <div className="sub_box">
+                  <div className="main_img">
+                    <video
+                      src={
+                        "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/enhance.webm"
+                      }
+                      className="size-[300px] rounded-[25px]"
+                      muted
+                      loop
+                      autoPlay
+                    ></video>
+                  </div>
+                  <div className="sub_content w-auto">
+                    <h3 className="md:text-[36px] md:mt-0 mt-4 text-[24px] font-semibold mb-[18px]">
+                      Text to Image
+                    </h3>
+                    <p className="xl:w-[476px] text-[#b6b6b7] lg:w-[390px] md:w-[328px] md:text-[14px] text-[12px] w-full mb-[24px]">
+                      Ignite your creative spark with Imagine AI Image
+                      Generator. Describe your vision with words, and watch the
+                      powerful tool translate them into captivating artwork.
+                      Catalyze a flurry of ideas and conquer creative
+                      roadblocks.
+                    </p>
+                    <button className="border-0 w-[100%]">
+                      <a
+                        href=""
+                        className="text-white py-[10px] md:px-[18px] w-[100%] block bg-[#8850FF] rounded-[10px] font-semibold"
+                      >
+                        Generate Image
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className="main_box our_box 2xsm:w-[335px] w-[280px] p-4 mx-auto bg-[#121317] rounded-[1.5rem]">
+                <div className="sub_box">
+                  <div className="main_img">
+                    <video
+                      src={
+                        "https://cdn.web.imagine.art/imagine-frontend/assets/video/landing-page/tools/character-consistency.webm"
+                      }
+                      className="size-[300px] rounded-[25px]"
+                      id="line"
                       muted
                       loop
                       autoPlay

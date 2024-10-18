@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="footer relative bg-[#040507] after:[background:radial-gradient(93.26%_50%_at_50%_0%,#272B36_0%,rgba(5,5,7,0.00)_100%)] h-[580px]">
+    <section className="footer relative after:[background:radial-gradient(90.26%_50%_at_55%_0%,#272B36_10%,rgba(5,5,7,0.00)_100%)] !h-[580px]">
       <div className="holder absolute h-full w-full top-0 left-0 z-10">
         <div className="container w-[1440px] xl:py-[80px] xl:px-[268px] lg:px-[80px] lg:py-[60px] md:px-[40px] md:py-[50px] xsm:px-[65px] xsm:py-10 mx-auto p-10">
           <div className="con flex justify-between relative">
@@ -60,8 +60,8 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="p_2">
-              <div className="img">
+            <div className="p_2 size-fit">
+              <div className="img size-fit">
                 <img
                   src={require("../assets/astronaut.webp")}
                   className="lg:size-[340px] md:size-[265px] size-[170px] absolute sp_img lg:right-[-50px] lg:bottom-[-50px] md:bottom-[-170px]  2xsm:bottom-[-20px] 2xsm:right-[-20px] bottom-[-30px] right-[-30px] mt-10"

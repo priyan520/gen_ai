@@ -5,7 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Slider2 = () => {
   return (
-    <section className="slider_section bg-[#0A0B0E] py-[120px] pt-[600px]">
+    <section className="slider_section bg-[#0A0B0E] py-[120px] md:pt-[600px]">
       <div className="container_custom">
         <div className="con">
           <div className="slider_container">

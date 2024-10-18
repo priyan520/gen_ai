@@ -418,7 +418,17 @@
 }
 body{
   overflow-x: hidden;
+  overflow-y: scroll !important;
 }
 .our_ai_tool video{
   transition: .3s;
+}
+
+.line1{
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8850FF;
 }

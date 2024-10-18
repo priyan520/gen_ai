@@ -2,7 +2,7 @@ import React from "react";
 import Particles from "react-particles";
 import { loadFireflyPreset } from "tsparticles-preset-firefly";
 
-const Test = () => {
+const TestBenner = () => {
   const customInit = async (engine) => {
     await loadFireflyPreset(engine);
   };
@@ -23,9 +23,9 @@ const Test = () => {
     <Particles 
       options={options} 
       init={customInit} 
-      className="w-[100px] h-[100px] max-h-[189px] absolute top-0 left-0" 
+      className="w-full  h-full absolute z-50  top-0 left-0 " 
     />
   );
 };
 
-export default Test;
+export default TestBenner;
